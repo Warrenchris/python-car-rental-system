@@ -1,0 +1,128 @@
+{
+    "KBN123Y": {
+        "model": "Toyota Vitz",
+        "available": false,
+        "rate": 3000,
+        "image": "vitz.jpg"
+    },
+    "KBZ456W": {
+        "model": "Mazda Demio",
+        "available": true,
+        "rate": 3500,
+        "image": "demio.jpg"
+    },
+    "KXY123A": {
+        "model": "Toyota Corolla",
+        "available": true,
+        "rate": 4000,
+        "image": "corolla.jpg"
+    },
+    "KAB789B": {
+        "model": "Honda Civic",
+        "available": true,
+        "rate": 4500,
+        "image": "civic.jpg"
+    },
+    "KDF456C": {
+        "model": "Ford Focus",
+        "available": true,
+        "rate": 3800,
+        "image": "focus.jpg"
+    },
+    "KGH123D": {
+        "model": "Chevrolet Malibu",
+        "available": true,
+        "rate": 4200,
+        "image": "malibu.jpg"
+    },
+    "KJL456E": {
+        "model": "Hyundai Elantra",
+        "available": true,
+        "rate": 3900,
+        "image": "elantra.jpg"
+    },
+    "KMN789F": {
+        "model": "Nissan Sentra",
+        "available": true,
+        "rate": 3700,
+        "image": "sentra.jpg"
+    },
+    "KPR123G": {
+        "model": "Mazda 3",
+        "available": true,
+        "rate": 4300,
+        "image": "mazda3.jpg"
+    },
+    "KSU456H": {
+        "model": "Kia Forte",
+        "available": true,
+        "rate": 3600,
+        "image": "forte.jpg"
+    },
+    "KVX789I": {
+        "model": "Subaru Impreza",
+        "available": true,
+        "rate": 4600,
+        "image": "impreza.jpg"
+    },
+    "KYA123J": {
+        "model": "BMW 3 Series",
+        "available": true,
+        "rate": 5500,
+        "image": "bmw3.jpg"
+    },
+    "KBC456K": {
+        "model": "Mercedes-Benz C-Class",
+        "available": true,
+        "rate": 7000,
+        "image": "cclass.jpg"
+    },
+    "KEG789L": {
+        "model": "Audi A4",
+        "available": true,
+        "rate": 6000,
+        "image": "audi_a4.jpg"
+    },
+    "KHJ123M": {
+        "model": "Volkswagen Golf",
+        "available": true,
+        "rate": 3800,
+        "image": "golf.jpg"
+    },
+    "KLM456N": {
+        "model": "Jeep Wrangler",
+        "available": true,
+        "rate": 8000,
+        "image": "wrangler.jpg"
+    },
+    "KNP789O": {
+        "model": "Chevrolet Tahoe",
+        "available": true,
+        "rate": 7500,
+        "image": "tahoe.jpg"
+    },
+    "KQR123P": {
+        "model": "Ram 1500",
+        "available": false,
+        "rate": 8500,
+        "image": "ram1500.jpg"
+    },
+    "KUV456Q": {
+        "model": "Ford Mustang",
+        "available": true,
+        "rate": 5000,
+        "image": "mustang.jpg"
+    },
+    "KWY789R": {
+        "model": "Toyota Prius",
+        "available": true,
+        "rate": 4200,
+        "image": "prius.jpg"
+    },
+    "KZA123S": {
+        "model": "Honda Accord",
+        "available": true,
+        "rate": 4700,
+        "image": "accord.jpg"
+    }
+}

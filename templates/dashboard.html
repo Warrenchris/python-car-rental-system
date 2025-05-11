@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2 class="text-center mb-4">Welcome, {{ username }}!</h2>
+
+<div class="row g-3">
+    <div class="col-md-4">
+        <a href="{{ url_for('available_cars') }}" class="btn btn-success w-100">View Available Cars</a>
+    </div>
+    <div class="col-md-4">
+        <a href="{{ url_for('book_car') }}" class="btn btn-primary w-100">Book a Car</a>
+    </div>
+    <div class="col-md-4">
+        <a href="{{ url_for('return_car') }}" class="btn btn-warning w-100">Return a Car</a>
+    </div>
+    <div class="col-md-4 mt-3">
+        <a href="{{ url_for('payment_options') }}" class="btn btn-info w-100">Make Payment</a>
+    </div>
+
+    {% if is_admin %}
+    <div class="col-md-4 mt-3">
+        <a href="{{ url_for('manage_cars') }}" class="btn btn-secondary w-100">Manage Cars</a>
+    </div>
+    <div class="col-md-4 mt-3">
+        <a href="{{ url_for('manage_users') }}" class="btn btn-secondary w-100">Manage Users</a>
+    </div>
+    <div class="col-md-4 mt-3">
+        <a href="{{ url_for('view_payments') }}" class="btn btn-secondary w-100">View Payments</a>
+    </div>
+    {% endif %}
+</div>
+{% endblock %}

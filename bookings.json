@@ -1,0 +1,16 @@
+{
+    "KQR123P": {
+        "user": "user",
+        "date": "2024-01-01",
+        "days": 15,
+        "total_cost": 127500,
+        "paid": true
+    },
+    "KBN123Y": {
+        "user": "admin",
+        "date": "2025-03-25",
+        "days": 15,
+        "total_cost": 45000,
+        "paid": true
+    }
+}

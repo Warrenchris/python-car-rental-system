@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2 class="mb-4">Manage Users</h2>
+
+{% if users %}
+<table class="table table-bordered">
+    <thead class="table-light">
+        <tr>
+            <th>Username</th>
+            <th>Role</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for username, info in users.items() %}
+        <tr>
+            <td>{{ username }}</td>
+            <td>{{ 'Admin' if info.is_admin else 'User' }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+    <p>No users found.</p>
+{% endif %}
+
+<a href="{{ url_for('home') }}" class="btn btn-secondary mt-3">Back</a>
+{% endblock %}

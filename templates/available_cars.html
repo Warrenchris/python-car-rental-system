@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2 class="mb-4">Available Cars</h2>
+
+{% if cars %}
+    <div class="row">
+        {% for plate, car in cars.items() %}
+        <div class="col-md-4 mb-3">
+            <div class="card">
+                {% if car.image %}
+                    <img src="{{ url_for('static', filename='car_images/' + car.image) }}" class="card-img-top" alt="{{ car.model }}">
+                {% endif %}
+                <div class="card-body">
+                    <h5 class="card-title">{{ car.model }}</h5>
+                    <p class="card-text">
+                        Plate: {{ plate }}<br>
+                        Rate: Ksh {{ car.rate }}/day
+                    </p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% else %}
+    <p>No cars available at the moment.</p>
+{% endif %}
+
+<a href="{{ url_for('home') }}" class="btn btn-secondary mt-3">Back</a>
+{% endblock %}

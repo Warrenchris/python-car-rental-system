@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2 class="mb-4">Book a Car</h2>
+
+<form method="POST">
+    <div class="mb-3">
+        <label for="plate" class="form-label">Select Car</label>
+        <select name="plate" class="form-select" required>
+            {% for plate, car in cars.items() %}
+                <option value="{{ plate }}">{{ car.model }} ({{ plate }})</option>
+            {% endfor %}
+        </select>
+    </div>
+    <div class="mb-3">
+        <label for="booking_date" class="form-label">Booking Date (YYYY-MM-DD)</label>
+        <input type="text" name="booking_date" class="form-control" required>
+    </div>
+    <div class="mb-3">
+        <label for="days" class="form-label">Number of Days</label>
+        <input type="number" name="days" class="form-control" min="1" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Book Now</button>
+</form>
+
+<a href="{{ url_for('home') }}" class="btn btn-secondary mt-3">Back</a>
+{% endblock %}

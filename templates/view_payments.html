@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2 class="mb-4">View Payments</h2>
+
+{% if payments %}
+<table class="table table-bordered">
+    <thead class="table-light">
+        <tr>
+            <th>Payment ID</th>
+            <th>User</th>
+            <th>Car Plate</th>
+            <th>Amount</th>
+            <th>Method</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for payment_id, payment in payments.items() %}
+        <tr>
+            <td>{{ payment_id }}</td>
+            <td>{{ payment.user }}</td>
+            <td>{{ payment.booking_plate }}</td>
+            <td>Ksh {{ payment.amount }}</td>
+            <td>{{ payment.method }}</td>
+            <td>{{ payment.date }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+    <p>No payments recorded yet.</p>
+{% endif %}
+
+<a href="{{ url_for('home') }}" class="btn btn-secondary mt-3">Back</a>
+{% endblock %}

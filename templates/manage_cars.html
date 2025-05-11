@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2 class="mb-4">Manage Cars</h2>
+
+{% if cars %}
+<table class="table table-bordered">
+    <thead class="table-light">
+        <tr>
+            <th>Plate</th>
+            <th>Model</th>
+            <th>Status</th>
+            <th>Rate (Ksh/day)</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for plate, car in cars.items() %}
+        <tr>
+            <td>{{ plate }}</td>
+            <td>{{ car.model }}</td>
+            <td>{{ 'Available' if car.available else 'Booked' }}</td>
+            <td>{{ car.rate }}</td>
+        </tr

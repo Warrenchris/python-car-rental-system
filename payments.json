@@ -1,0 +1,70 @@
+{
+    "PAY-20250425205456": {
+        "booking_plate": "KBN123Y",
+        "user": "admin",
+        "amount": 45000,
+        "method": "M-Pesa",
+        "date": "2025-04-25 20:54:56",
+        "status": "Completed"
+    },
+    "PAY-20250425205600": {
+        "booking_plate": "KBZ456W",
+        "user": "admin",
+        "amount": 70000,
+        "method": "M-Pesa",
+        "date": "2025-04-25 20:56:00",
+        "status": "Completed"
+    },
+    "PAY-20250425214238": {
+        "booking_plate": "KBZ456W",
+        "user": "admin",
+        "amount": 105000,
+        "method": "M-Pesa",
+        "date": "2025-04-25 21:42:38",
+        "status": "Completed"
+    },
+    "PAY-20250425214554": {
+        "booking_plate": "KJL456E",
+        "user": "user",
+        "amount": 46800,
+        "method": "M-Pesa",
+        "date": "2025-04-25 21:45:54",
+        "status": "Completed"
+    },
+    "PAY-20250425220020": {
+        "booking_plate": "KGH123D",
+        "user": "admin",
+        "amount": 42000,
+        "method": "M-Pesa",
+        "date": "2025-04-25 22:00:20",
+        "status": "Completed",
+        "details": "2345678"
+    },
+    "PAY-20250425223352": {
+        "booking_plate": "KQR123P",
+        "user": "user",
+        "amount": 127500,
+        "method": "PayPal",
+        "date": "2025-04-25 22:33:52",
+        "status": "Completed",
+        "details": "warrenchris745@gmail.com"
+    },
+    "PAY-20250427150528": {
+        "booking_plate": "KAB789B",
+        "user": "admin",
+        "amount": 13500,
+        "method": "PayPal",
+        "date": "2025-04-27 15:05:28",
+        "status": "Completed",
+        "details": "dqbhsfn@gmail.com"
+    },
+    "PAY-20250427183107": {
+        "booking_plate": "KBN123Y",
+        "user": "admin",
+        "amount": 45000,
+        "method": "M-Pesa",
+        "date": "2025-04-27 18:31:07",
+        "status": "Completed",
+        "details": "3456789"
+    }
+}

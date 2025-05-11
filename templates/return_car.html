@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2 class="mb-4">Return a Car</h2>
+
+{% if user_booked %}
+<form method="POST">
+    <div class="mb-3">
+        <label for="plate" class="form-label">Select Your Booked Car</label>
+        <select name="plate" class="form-select" required>
+            {% for plate in user_booked %}
+                <option value="{{ plate }}">{{ plate }}</option>
+            {% endfor %}
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Return Car</button>
+</form>
+{% else %}
+    <p>You have no booked cars.</p>
+{% endif %}
+
+<a href="{{ url_for('home') }}" class="btn btn-secondary mt-3">Back</a>
+{% endblock %}
